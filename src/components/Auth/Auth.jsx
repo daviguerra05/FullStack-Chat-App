@@ -25,7 +25,7 @@ export const Auth =(props)=>{
                     <h1>Sign in</h1>
                     <h2></h2>
                     <button onClick={signInWithGoogle}>
-                        Sign In with Google <img src="/src/assets/google.png" alt="G" width="25px" height="25px"/>
+                        Sign In with Google <img src="/public/google.png" alt="G" width="25px" height="25px"/>
                     </button>
                 </div>
             </section>
