@@ -98,4 +98,16 @@
 .cInput button svg:hover {
   transform: translateY(-5px);
   color: #D95D39;
+}
+
+@media screen and (max-width: 800px) {
+  #chatS {
+    padding: 40% 0 0 0;
+  }
+  .chatC {
+    width: 90%;
+  }
+  .cViewport {
+    height: 80%;
+  }
 }/*# sourceMappingURL=Chat.css.map */

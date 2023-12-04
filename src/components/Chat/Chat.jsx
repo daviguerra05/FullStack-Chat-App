@@ -29,8 +29,9 @@ export const Chat = (props)=>{
 
         return () => unsubscribe();
     },[]);
-
+    
     //Submit
+    const form = document.getElementById('form');
     const handleSUmbmit = async(e)=>{
         e.preventDefault();
         if (newMessage === "") return;
@@ -41,7 +42,6 @@ export const Chat = (props)=>{
             user: auth.currentUser.displayName,
             room,
         });
-
         setNewMessage("");
     };
 
@@ -60,7 +60,7 @@ export const Chat = (props)=>{
                         })}
                     </div>
 
-                    <form  onSubmit={handleSUmbmit} className='cInput'>
+                    <form onSubmit={handleSUmbmit} id="form" className='cInput'>
                         <input 
                             type="text" 
                             placeholder='Message Here...'

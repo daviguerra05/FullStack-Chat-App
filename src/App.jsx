@@ -5,6 +5,7 @@ import { Auth } from './components/Auth/Auth'
 import './styles/App.css'
 import { Rooms } from './components/Rooms/Rooms';
 import { Chat } from './components/Chat/Chat';
+import { Header } from './components/Header/Header';
 
 
 //
@@ -21,6 +22,7 @@ function App() {
   }
   return (
     <>
+      <Header setIsAuth={setIsAuth} setRoom={setRoom}/>
       {room ? 
         <Chat room={room}/>
         :

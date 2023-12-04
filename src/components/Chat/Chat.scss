@@ -102,3 +102,16 @@
     transform: translateY(-5px);
     color: $orange-color;
 }
+
+@media screen and (max-width:800px) {
+    #chatS{
+        padding: 40% 0 0 0;
+    }
+    .chatC{
+        width: 90%;
+    }
+    .cViewport{
+        height: 80%;
+    }
+    
+}
