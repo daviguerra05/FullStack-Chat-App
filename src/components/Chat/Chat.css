@@ -1,0 +1,101 @@
+#chatS {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1B2021;
+  color: #F1F7ED;
+}
+
+#chatS h2 {
+  width: 300px;
+  height: 1px;
+  background: #383838;
+  margin: 10px 0 10px 0;
+}
+
+.chatC {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  color: #F1F7ED;
+}
+
+.cViewport {
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  color: inherit;
+  padding: 0.5% 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cViewport p {
+  width: 100%;
+  height: auto;
+}
+
+.cViewport::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cViewport::-webkit-scrollbar-track {
+  background: rgba(128, 128, 128, 0.199);
+  margin-block: 10px;
+  border-radius: 5px;
+}
+
+.cViewport::-webkit-scrollbar-thumb {
+  background: #D95D39;
+  border-radius: 5px;
+}
+
+.cViewport::-webkit-scrollbar-thumb:hover {
+  background: rgb(78, 21, 0);
+}
+
+@supports (scrollbar-color: red blue) {
+  .cViewport {
+    scrollbar-color: rgba(128, 128, 128, 0.199) #D95D39;
+    scrollbar-width: thin;
+  }
+}
+.cInput {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  color: inherit;
+  border-radius: 10px;
+  border: 1px solid #383838;
+}
+
+.cInput input {
+  width: 80%;
+  padding: 0 5%;
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+.cInput button {
+  background: none;
+  border: none;
+  flex: auto;
+  color: inherit;
+}
+
+.cInput button svg {
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.cInput button svg:hover {
+  transform: translateY(-5px);
+  color: #D95D39;
+}/*# sourceMappingURL=Chat.css.map */
