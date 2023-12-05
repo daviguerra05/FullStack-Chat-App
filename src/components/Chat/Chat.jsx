@@ -31,11 +31,11 @@ export const Chat = (props)=>{
     },[]);
     
     //Submit
-    const form = document.getElementById('form');
     const handleSUmbmit = async(e)=>{
         e.preventDefault();
         if (newMessage === "") return;
-
+        const input = document.getElementById('inp');
+        input.value = "";
         await addDoc(messagesRef, {
             text: newMessage,
             createdAt: serverTimestamp(),
@@ -60,12 +60,12 @@ export const Chat = (props)=>{
                         })}
                     </div>
 
-                    <form onSubmit={handleSUmbmit} id="form" className='cInput'>
+                    <form onSubmit={handleSUmbmit} className='cInput'>
                         <input 
                             type="text" 
+                            id="inp"
                             placeholder='Message Here...'
                             onChange={(e)=>setNewMessage(e.target.value)}
-                            value={newMessage}
                         />
                         <button type="submit">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
