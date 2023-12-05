@@ -45,7 +45,6 @@ export const Chat = (props)=>{
         setNewMessage("");
     };
 
-    let last_user = null;
     return(
         <>  
             <section id='chatS'>
