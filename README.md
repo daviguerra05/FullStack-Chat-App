@@ -2,7 +2,7 @@
 # FullStack Chat App 💬
 
 Desenvolvimento FullStack de um Chat App
-## Documentation
+## Tech Stack
 
 **Frontend:** React JS, HTML, CSS, Sass
 
